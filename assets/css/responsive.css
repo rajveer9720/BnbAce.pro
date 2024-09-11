@@ -1,0 +1,445 @@
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1444px) {
+  .sticky {
+    padding: 10px 30px;
+  }
+
+  .cryptobit_nav_manu {
+    padding: 0 30px;
+  }
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .cryptobit_nav_manu {
+    padding: 0 20px;
+  }
+
+  a.main_sticky img {
+    width: 100%;
+  }
+
+  .cryptobit_menu > ul > li > a {
+    margin: 20px 15px 18px;
+  }
+
+  a.logo_img img {
+    width: 100%;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+  .menu-button a {
+    padding: 5px 20px;
+  }
+  .banner-area {
+    height: 800px;
+  }
+  .slider-thumb img {
+    width: 100%;
+  }
+  .brand-area {
+    padding: 5px 0 15px 0;
+    margin-top: -22px;
+  }
+  .banner-title h1 {
+    font-size: 44px;
+  }
+  .brand-area {
+    margin-top: -22px;
+  }
+  .single-brand {
+    padding: 20px 10px 20px 20px;
+  }
+  .section-title h3 {
+    font-size: 38px;
+  }
+  .about-thumb img {
+    width: 100%;
+  }
+  .about-video-icon a {
+    left: 200px;
+  }
+  .article-title h2 {
+    font-size: 16px;
+  }
+  .roadmap-title h2 {
+    font-size: 18px;
+  }
+  .blog-title h2 {
+    font-size: 18px;
+  }
+}
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+  .cryptobit_nav_manu {
+    display: none;
+  }
+  .slider-thumb img {
+    width: 100%;
+  }
+  .banner-area {
+    height: 700px;
+  }
+  .banner-title h1 {
+    font-size: 32px;
+  }
+  .about-thumb {
+    margin-top: 30px;
+  }
+  .Article-area {
+    padding: 0px 0 0px 0;
+  }
+  .roadmap-math h1 {
+    margin-top: 0;
+  }
+  .subscribe-form button {
+    padding: 11px 30px;
+    right: 175px;
+  }
+  .subscribe-form input {
+    width: 30%;
+    padding: 5px 20px !important;
+  }
+  .footer-content-three {
+    text-align: left;
+    margin-top: 40px;
+  }
+  .sticky {
+    position: absolute !important;
+  }
+  .footer-content-two {
+    text-align: left;
+  }
+  .cryptobit_nav_manu {
+    display: none;
+  }
+  .about-video-icon a {
+    top: 260px;
+    left: 330px;
+  }
+  .about-thumb-two {
+    text-align: center;
+  }
+  .about-thumb-two img {
+    width: inherit;
+    border-radius: 11px;
+  }
+  .about-content-two {
+    margin-top: 20px;
+  }
+  .project-thumb img {
+    width: inherit;
+    border-radius: 12px;
+  }
+  .banner-button.margin-top {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .subscribe-form button {
+    padding: 11px 43px;
+    right: 192px;
+  }
+  .blog-title h2 {
+    font-size: 13px;
+  }
+  .footer-content-one {
+    text-align: center;
+  }
+  .footer-content-two {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .footer-content-three {
+    text-align: center;
+  }
+  .project-thumb img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/* Large Mobile :600px. */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .cryptobit_nav_manu {
+    display: none;
+  }
+  .banner-area {
+    height: 870px;
+    padding: 80px 0 0;
+  }
+  .slider-thumb img {
+    width: 100%;
+  }
+  .brand-area {
+    padding: 0px 0 5px 0;
+    margin-top: -22px;
+  }
+  .banner-title h1 {
+    font-size: 38px;
+    padding-top: 20px;
+  }
+  .about-area {
+    padding: 20px 0 80px 0;
+  }
+  .about-thumb {
+    margin-top: 25px;
+  }
+  .about-thumb img {
+    width: 100%;
+  }
+  .expart-team-icon ul li a {
+    left: 181px;
+  }
+  .expart-team-thumb img {
+    width: 70%;
+  }
+  .roadmap-math h1 {
+    margin-top: 0;
+  }
+  .Article-area {
+    padding: 0px 0 0px 0;
+  }
+  .sticky {
+    position: absolute !important;
+  }
+  .about-video-icon a {
+    top: 200px;
+    left: 242px;
+  }
+  .section-title {
+    margin-top: 30px;
+  }
+  .banner-button a {
+    margin-bottom: 30px;
+  }
+  .subscribe-form input {
+    width: 36%;
+  }
+  .subscribe-form button {
+    padding: 11px 40px;
+    right: 80px;
+  }
+  .section-title.text-center p {
+    width: 100%;
+  }
+  .blog-thumb img {
+    border-radius: 10px;
+  }
+  .footer-content-one {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .footer-content-two {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .footer-content-three {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .project-thumb img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+/* small mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+  .cryptobit_nav_manu {
+    display: none;
+  }
+  /* .banner-area {
+    height: 830px;
+  } */
+  .banner-title h1 {
+    font-size: 38px;
+    padding-top: 20px;
+  }
+  .slider-thumb img {
+    width: 100%;
+  }
+  .Article-area {
+    padding: 0px 0 0px 0;
+  }
+  .sticky {
+    position: relative !important;
+    padding: 0;
+  }
+  .about-area {
+    padding: 0px 0 80px 0;
+  }
+  .about-thumb {
+    margin-top: 25px;
+  }
+  .about-thumb img {
+    width: 100%;
+  }
+  .expart-team-thumb img {
+    width: 80%;
+  }
+  .expart-team-icon ul li a {
+    left: 150px;
+  }
+  .section-title h3 {
+    font-size: 38px;
+  }
+  .roadmap-title h2 {
+    font-size: 18px;
+  }
+  .roadmap-math h1 {
+    margin-top: 0;
+  }
+  .section-title.text-center p {
+    width: inherit;
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  .subscribe-form button {
+    padding: 12px 25px;
+    right: 80px;
+  }
+  .subscribe-form input {
+    width: 40%;
+    padding: 5px 18px !important;
+  }
+  .sticky {
+    position: absolute !important;
+  }
+  .about-video-icon a {
+    top: 175px;
+    left: 200px;
+  }
+  .section-title {
+    margin-top: 30px;
+  }
+  .banner-button a {
+    margin-bottom: 30px;
+  }
+  .article-thumb img {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .footer-content-one {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .footer-content-two {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .footer-content-three {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .project-thumb img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/* small mobile :320px. */
+@media only screen and (min-width: 280px) and (max-width: 479px) {
+  .cryptobit_nav_manu {
+    display: none;
+  }
+
+  .sticky {
+    position: relative !important;
+    padding: 0;
+  }
+  /* .banner-area {
+    height: 650px;
+  } */
+  .slider-thumb img {
+    width: 100%;
+  }
+  .banner-title h1 {
+    font-size: 28px;
+  }
+  .Article-area {
+    padding: 0px 0 0px 0;
+  }
+  .about-area {
+    padding: 0px 0 60px 0;
+  }
+  .about-thumb {
+    margin-top: 25px;
+  }
+  .about-thumb img {
+    width: 100%;
+  }
+  .section-title h3 {
+    font-size: 26px;
+  }
+  .expart-team-icon ul li a {
+    left: 79px;
+  }
+  .expert-content {
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  .section-title h3 {
+    font-size: 32px;
+  }
+  .roadmap-title h2 {
+    font-size: 18px;
+  }
+  .roadmap-math h1 {
+    margin-top: 0;
+  }
+  .roadmap-content {
+    padding: 25px 20px 10px 55px;
+  }
+  .roadmap-desc p {
+    font-size: 14px;
+  }
+  .section-title.text-center p {
+    width: inherit;
+    margin: 18px auto 0;
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+  .subscribe-form button {
+    padding: 11px 15px;
+    right: 35px;
+  }
+  .subscribe-form input {
+    width: 50%;
+  }
+  .sticky {
+    position: absolute !important;
+  }
+  .about-video-icon a {
+    top: 95px;
+    left: 125px;
+  }
+  .section-title {
+    margin-top: 20px;
+  }
+  .section-title h3 {
+    font-size: 24px;
+  }
+  .banner-button a {
+    margin-bottom: 20px;
+  }
+  .article-thumb img {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .footer-content-one {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .footer-content-two {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .footer-content-three {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .project-thumb img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}

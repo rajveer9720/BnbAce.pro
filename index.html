@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>cryptobit - Transport & Logistics HTML5 Template</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="56x56"
+      href="assets/fave-icon/icon.png"
+    />
+    <!-- bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/bootstrap.min.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/owl.carousel.min.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- animate CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/animate.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- animated-text CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/animated-text.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- font-awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/all.min.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- font-flaticon CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/flaticon.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- theme-default CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/theme-default.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- meanmenu CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/meanmenu.min.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <!-- transitions CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/owl.transitions.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- venobox CSS -->
+    <link
+      rel="stylesheet"
+      href="venobox/venobox.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- responsive CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/responsive.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- modernizr js -->
+    <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="../../../cdn.jsdelivr.net/npm/bootstrap-icons%401.9.1/font/bootstrap-icons.css"
+    />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+  </head>
+  <body>
+    <div id="walletModal" class="modal">
+      <div class="modal-content">
+          <span id="close-popup" class="close">&times;</span>
+          <div id="metamaskOption" class="wallet-option">
+              <img src="/assets/metamask.svg" alt="MetaMask">
+              <div>
+                  <p>MetaMask</p>
+                  <span>Connect to your MetaMask Wallet</span>
+              </div>
+          </div>
+          <div id="walletConnectOption" class="wallet-option">
+              <img src="/assets/wallet connect.svg" alt="WalletConnect">
+              <div>
+                  <p>WalletConnect</p>
+                  <span>Scan with WalletConnect to connect</span>
+              </div>
+          </div>
+      </div>
+  </div>
+    <!-- loder -->
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+      <div class="loder-section left-section"></div>
+      <div class="loder-section right-section"></div>
+    </div>
+
+    <!--==================================================-->
+    <!-- Start cryptobit Main Menu Area -->
+    <!--==================================================-->
+    <div id="sticky-header" class="cryptobit_nav_manu">
+      <div class="container">
+        <div class="row m-auto align-items-center">
+          <div class="col-lg-3">
+            <div class="logo">
+              <a class="logo_img" href="index.html" title="cryptobit">
+                <img src="assets/images/logo1.png" alt="img" />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 pl-0 pr-0"></div>
+          <div class="col-lg-4 d-flex">
+            <div class="rainbow">
+              <a href="" class="#">Smart Cotract</a>
+            </div>
+            <button id="connectWalletBtn" class="rainbow">Connect Wallect</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- cryptobit Mobile Menu Area -->
+    <div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none">
+      <div class="mobile-menu">
+        <nav class="cryptobit_menu">
+          <ul class="nav_scroll">
+            <li><a href="">Home </a></li>
+            <li id="connectwalletsecond"><a >Connect Wallet </a></li>
+            
+                    </ul>
+        </nav>
+      </div>
+    </div>
+    <!--==================================================-->
+    <!-- End cryptobit Main Menu Area -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- Start cryptobit banner Area -->
+    <!--==================================================-->
+    <div class="banner-area align-items-center d-flex">
+      <div class="container">
+        <div class="row m-auto align-items-center gap m-auto">
+          <div class="col-lg-6 col-md-6">
+            <div class="slider-thumb">
+              <div class="profit-section">
+                <h2 class="title">Get 200% Profit in BNB</h2>
+                <div class="profit-info">
+                  <p class="rate">
+                    Basic interest rate: <span>1% every 24 hrs</span> <br />
+                    (+0.1041% hourly)
+                  </p>
+                  <p class="hold-bonus">
+                    Personal hold-bonus:
+                    <span>+0.1% for every 24 hrs without withdraw</span>
+                  </p>
+                  <p class="contract-bonus">
+                    Contract total amount bonus:
+                    <span
+                      >+0.1% for every 500 BNB on platform address balance</span
+                    >
+                  </p>
+                </div>
+                <div class="cta">
+                  <a href="path-to-pdf.pdf" class="pdf-btn">PDF Presentation</a>
+                </div>
+              </div>
+            </div>
+          </div>
+   
+            <div class="col-lg-5 col-md-6 Contract">
+              <div class="banner-content">
+                <div class="banner-title">
+                  <h2>Contract balance</h2>
+                  <p id="contract-balance" class="para-color">0.000</p>
+                </div>
+                <div class="banner-user">
+                  <div class="user-thumb">
+                    <h2>Total withdrawn</h2>
+                    <p id="withdrawandata" class="para-color">0.000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--==================================================-->
+    <!-- End cryptobit banner Area -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- Start cryptobit brand Area -->
+    <!--==================================================-->
+
+
+
+    <div class="dashboard">
+      <div class="contract-balance">
+          <h3>Current Contract Balance</h3>
+          <span id="contract-balance2">0.000 BNB</span>
+      </div>
+      
+      <div class="stat-boxes">
+          <div class="stat-box" id="deposited">
+              <h4>Deposited</h4>
+              <p class="amount" id="total-deposits">1.177</p>
+              <p class="currency">BNB</p>
+              <i class="icon-deposit"></i> <!-- Placeholder for icon -->
+          </div>
+          
+          <div class="stat-box" id="users">
+              <h4>Users</h4>
+              <p class="amount" id="total-users">8</p>
+              <i class="icon-users"></i> <!-- Placeholder for icon -->
+          </div>
+          
+          <div class="stat-box" id="withdrawn">
+              <h4>Withdrawn</h4>
+              <p class="amount" id="withdrawandata2">0.942</p>
+              <p class="currency">BNB</p>
+              <i class="icon-withdraw"></i> <!-- Placeholder for icon -->
+          </div>
+          
+          <div class="stat-box" >
+              <h4>Ref Rewards</h4>
+              <p class="amount" id="ref-rewards">0.172</p>
+              <p class="currency">BNB</p>
+              <i class="icon-rewards"></i> <!-- Placeholder for icon -->
+          </div>
+      </div>
+      
+      <div class="audit-section">
+          <h4>Audit</h4>
+          <div class="audit-logo">
+              <img src="assets/images/packshield.png" alt="PeckShield Audit">
+          </div>
+          <p>Status: <span class="audit-status">Passed</span></p>
+      </div>
+  </div>
+  
+    <!--==================================================-->
+    <!-- End cryptobit brand Area -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- Start cryptobit About Area -->
+    <!--==================================================-->
+    <div class="deposit-area">
+      <div class="container">
+        <div class="row m-auto">
+          <!-- Left Section: Deposit Form -->
+          <div class="col-lg-6 col-md-12">
+            <div class="deposit-content">
+              <div class="section-title">
+                <h2>Deposit</h2>
+              </div>
+              <div class="deposit-form">
+                <h4>Make New</h4>
+                <div class="input-group">
+                  <input  id="depositAmount" type="number" placeholder="0.000" > </input>
+                  <span>BNB</span>
+                </div>
+                <button id="sendTransaction" class="btn-deposit">MAKE DEPOSIT</button>
+                <div class="limits">
+                  <p>* minimum 0.05 BNB</p>
+                  <p>** maximum 1000 BNB</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Right Section: Summary Cards -->
+          <div class="col-lg-6 col-md-12">
+            <div class="summary-cards">
+              <!-- <div class="summary"> -->
+                <div class="card per-day">
+                  <h4>Per Day</h4>
+                  <p id="perDayIncome">0.000 BNB</p>
+                </div>
+                <div class="card percent-rate">
+                  <h4>Percent rate</h4>
+                  <p><span>3%</span> per day</p>
+                </div>
+              </div>
+              <div class="card2 total-income">
+                <h4>Total Income</h4>
+                <p id="totalIncome">0.000 BNB</p>
+                <small>* Withdrawal at any time you want!</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+        <!-- Active Deposits Table -->
+        <div class="container active-deposits">
+          <h3>Active Deposits</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Amount (BNB)</th>
+                <th>Working out</th>
+                <th>Profit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Sample row m-auto -->
+              <tr>
+                <td>10/09/2024</td>
+                <td>0.5 BNB</td>
+                <td>In progress</td>
+                <td>0.05 BNB</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    
+        <!-- Finished Section -->
+        <div class="container finished-section">
+          <h3>Finished</h3>
+          <!-- Content related to finished deposits -->
+        </div>
+      </div>
+    </div>
+    
+
+    <!--==================================================-->
+    <!-- End cryptobit About Area -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- Start cryptobit expart Area -->
+    <!--==================================================-->
+    <div class="expart-team-area">
+      <div class="container">
+        <div class="row m-auto">
+          <!-- Left side: One large card -->
+          <div class="col-lg-12 col-md-12">
+            <div class="slider-thumb large-card">
+              <div class="profit-section">
+                <h2 class="title">Your Income</h2>
+                <div class="profit-info">
+                  <p id="depositUser" class="rate">0.000 <span>BNB</span></p>
+                  <button id="withdraw-button" class="rate2" id="">Withdrawal</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Right side: Four state cards (2 in one row m-auto, 2 in next row m-auto) -->
+          <!-- <div class="col-lg-6 col-md-12"> --><div class="row m-auto">
+            <div class="col-lg-12">
+              <div class="grid-container">
+                <!-- Box 1 -->
+                <div class="slider-thumb small-box">
+                  <div class="profit-section">
+                    <h4 class="title">Total Deposit</h4>
+                    <div class="profit-info">
+                      <h4 id="userDeposits" class="rate">0.000</h4>
+                      <p class="rate">BNB</p>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Box 2 -->
+                <div class="slider-thumb small-box">
+                  <div class="profit-section">
+                    <h4 class="title">Total Earnings</h4>
+                    <div class="profit-info">
+                      <h4 id="profit" class="rate">0.000</h4>
+                      <p class="rate">BNB</p>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Box 3 -->
+                <div class="slider-thumb small-box">
+                  <div class="profit-section">
+                    <h4 class="title">Total Withdrawals</h4>
+                    <div class="profit-info">
+                      <h4 id="amountWithdrawn" class="rate">0.000</h4>
+                      <p class="rate">BNB</p>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Box 4 -->
+                <div class="slider-thumb small-box">
+                  <div class="profit-section">
+                    <h4 class="title">Total Profit</h4>
+                    <div class="profit-info">
+                      <h4 id="interestRate" class="rate">0.000</h4>
+                      <p class="rate">BNB</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!--==================================================-->
+    <!-- End cryptobit About Area -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- Start cryptobit Roadmap Area -->
+    <!--==================================================-->
+    <div class="roadmap-area">
+      <div class="refferal">
+        <h2>Referral</h2>
+        <div class="ref-link">
+            <span id="referralLink" type="text" value="You will get your ref link after investing..." disabled> </span>
+            <button id="copyButton">Copy</button>
+        </div>
+        <div class="info">
+            <div>
+                <h3>Total Reward</h3>
+                <p>0.000 BNB</p>
+            </div>
+            <div>
+                <h3>Total Referral</h3>
+                <p id="countdownline" >0</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 style="text-align: center; margin: 30px;">Refferal</h2>
+        <div class="row m-auto">
+          <div class="col-lg-6">
+            <div class="single-roadmap">
+             
+              <div class="roadmap-content">
+                <div class="roadmap-title">
+                  <h2>1 LVL</h2>
+                </div>
+                <div class="roadmap-date">
+                  <h5>7%</h5>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="roadmap-math">
+              <h1>01</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row m-auto">
+          <div class="col-lg-6">
+            <div class="roadmap-math left">
+              <h1>02</h1>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="single-roadmap">
+             
+              <div class="roadmap-content">
+                <div class="roadmap-title">
+                  <h2>LVL2</h2>
+                </div>
+                <div class="roadmap-date">
+                  <h5>3%</h5>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row m-auto">
+          <div class="col-lg-6">
+            <div class="single-roadmap">
+              
+              <div class="roadmap-content">
+                <div class="roadmap-title">
+                  <h2>LVL 3</h2>
+                </div>
+                <div class="roadmap-date">
+                  <h5>2%</h5>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="roadmap-math">
+              <h1>03</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row m-auto">
+          <div class="col-lg-6">
+            <div class="roadmap-math left">
+              <h1>04</h1>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="single-roadmap">
+              
+              <div class="roadmap-content">
+                <div class="roadmap-title">
+                  <h2>LVL 4</h2>
+                </div>
+                <div class="roadmap-date">
+                  <h5>2%</h5>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row m-auto">
+          <div class="col-lg-6">
+            <div class="single-roadmap">
+              
+              <div class="roadmap-content">
+                <div class="roadmap-title">
+                  <h2>LVL5</h2>
+                </div>
+                <div class="roadmap-date">
+                  <h5>1%</h5>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="roadmap-math">
+              <h1>05</h1>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row m-auto">
+          <div class="col-lg-12">
+            <div class="banner-button text-center margin-top">
+              <a href="#"> More Member </a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <!--==================================================-->
+    <!-- End cryptobit Roadmap Area -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- start cryptobit countdawn Area -->
+    <!--==================================================-->
+    <!-- <div class="countdown-area">
+      <div class="container">
+        <div class="row m-auto">
+          <div class="col-lg-12">
+            <div class="section-title text-center">
+              <h5>Countdown</h5>
+              <h3>NFT Start From 0.7 ETH</h3>
+              <p>
+                Proactively generate cross-media opportunities with out currency
+                back compatible alignments via fully researched niches.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row m-auto border-botom">
+          <div class="col-lg-12">
+            <div id="clockdiv">
+              <div class="count-bx">
+                <span class="days"></span>
+                <div class="smalltext">Days</div>
+              </div>
+              <div class="count-bx">
+                <span class="hours"></span>
+                <div class="smalltext">Hours</div>
+              </div>
+              <div class="count-bx">
+                <span class="minutes"></span>
+                <div class="smalltext">Minutes</div>
+              </div>
+              <div class="count-bx">
+                <span class="seconds"></span>
+                <div class="smalltext">Seconds</div>
+              </div>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!--==================================================-->
+    <!-- End cryptobit countdawn Area -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- Start cryptobit Subscribe Area -->
+    <!--==================================================-->
+    <!-- <div class="subscribe-area">
+      <div class="container">
+        <div class="row m-auto">
+          <div class="col-lg-12">
+            <div class="Subscribe-text text-center">
+              <h3>Subscribe Our Newslatter</h3>
+            </div>
+            <div class="subscribe-form text-center">
+              <input type="text" name="Email" placeholder="Enter E-mail" />
+              <button type="submit">
+                Sign Up<i class="fas fa-long-arrow m-auto-alt-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!--==================================================-->
+    <!-- End cryptobit countdawn Area -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- Start cryptobit footer Area -->
+    <!--==================================================-->
+
+    <div class="footer-area">
+      <div class="container">
+        <div class="row m-auto">
+          <div class="col-lg-12">
+            <div class="footer-top text-center">
+              <p>© 2024 Cryptobit Theme. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row m-auto">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-content-one">
+              <!-- <div class="footer-quick">
+                <h4>Quick Links</h4>
+              </div>
+              <div class="footer-list">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fas fa-arrow m-auto-right"></i>About Us</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fas fa-arrow m-auto-right"></i>Blog</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fas fa-arrow m-auto-right"></i>Contact Us</a>
+                  </li>
+                </ul>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-content-two">
+              <div class="footer-thumb">
+                <img src="assets/images/logo.png" alt="img" />
+              </div>
+              <!-- <div class="footer-desc">
+                <p>
+                  Join us Cryptobit and Selling Your Digital Assests with
+                  worldwide.
+                </p>
+              </div>
+              <div class="footer-list-icon">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fab fa-facebook"></i> </a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                  </li>
+                  <li> -->
+                    <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </li> -->
+                  <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-content-three">
+              <!-- <div class="footer-quick">
+                <h4>Extra Links</h4>
+              </div>
+              <div class="footer-list">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fas fa-arrow m-auto-right"></i>About Us</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fas fa-arrow m-auto-right"></i>Blog</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fas fa-arrow m-auto-right"></i>Contact Us</a>
+                  </li>
+                </ul>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--==================================================-->
+    <!-- End cryptobit footer Area -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- Start Search Popup Area -->
+    <!--==================================================-->
+    <div class="search-popup">
+      <button class="close-search style-two">
+        <i class="fas fa-times"></i>
+      </button>
+      <button class="close-search"><i class="fas fa-arrow m-auto-up"></i></button>
+      <form method="post" action="#">
+        <div class="form-group">
+          <input
+            type="search"
+            name="search-field"
+            value=""
+            placeholder="Search Here"
+            required=""
+          />
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+      </form>
+    </div>
+    <!--==================================================-->
+    <!-- End Search Popup Area -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- Start scrollup section Area -->
+    <!--==================================================-->
+    <!-- scrollup section -->
+    <div class="scroll-area">
+      <div class="top-wrap">
+        <div class="go-top-btn-wraper">
+          <div class="go-top go-top-button">
+            <i class="fas fa-arrow m-auto-up"></i>
+            <i class="fas fa-arrow m-auto-up"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--==================================================-->
+    <!-- Start scrollup section Area -->
+    <!--==================================================-->
+
+    <!-- jquery js -->
+    <script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- carousel js -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- counterup js -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- waypoints js -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- wow js -->
+    <script src="assets/js/wow.js"></script>
+    <!-- imagesloaded js -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- venobox js -->
+    <script src="venobox/venobox.js"></script>
+    <!-- ajax mail js -->
+    <script src="assets/js/ajax-mail.js"></script>
+    <!--  animated-text js -->
+    <script src="assets/js/animated-text.js"></script>
+    <!-- venobox min js -->
+    <script src="venobox/venobox.min.js"></script>
+    <!-- isotope js -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- jquery meanmenu js -->
+    <script src="assets/js/jquery.meanmenu.js"></script>
+    <!-- jquery scrollup js -->
+    <script src="assets/js/jquery.scrollUp.js"></script>
+    <!-- theme js -->
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/jquery.barfiller.js"></script>
+    
+<script src="https://cdn.jsdelivr.net/npm/web3@1.7.5/dist/web3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@walletconnect/web3-provider@1.6.6/dist/umd/index.min.js"></script>
+    <script src="assets/js/bscscan_plan_3.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- jquery js -->
+  </body>
+
+  <!-- Mirrored from drtheme.ditsolution.net/html/cryptobit/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Sep 2024 04:53:34 GMT -->
+</html>
